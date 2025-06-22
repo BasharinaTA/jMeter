@@ -4,7 +4,7 @@ metadata:
   name: job-jmeter
 spec:
   ttlSecondsAfterFinished: 100
-  parallelism: 2
+  parallelism: 4
   template:
     spec:
       containers:
