@@ -9,6 +9,6 @@ spec:
     spec:
       containers:
         - name: jmeter
-          image: jmeter-image:latest
+          image: jmeter-items:latest
           imagePullPolicy: Never
       restartPolicy: Never
