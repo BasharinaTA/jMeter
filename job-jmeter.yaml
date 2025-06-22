@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-jmeter
+spec:
+  ttlSecondsAfterFinished: 100
+  parallelism: 5
+  template:
+    spec:
+      containers:
+        - name: jmeter
+          image: jmeter-image-3:latest
+          imagePullPolicy: Never
+      restartPolicy: Never
