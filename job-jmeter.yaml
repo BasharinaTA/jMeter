@@ -4,11 +4,11 @@ metadata:
   name: job-jmeter
 spec:
   ttlSecondsAfterFinished: 100
-  parallelism: 5
+  parallelism: 4
   template:
     spec:
       containers:
         - name: jmeter
-          image: jmeter-image-3:latest
+          image: jmeter:latest
           imagePullPolicy: Never
       restartPolicy: Never
